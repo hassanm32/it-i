@@ -1,0 +1,94 @@
+/* زرار الفتح */
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Sidebar مخفية افتراضيًا */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* مخفية */
+  width: 250px;
+  height: 100%;
+  background-color: #004aad;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  right: 0; /* تظهر */
+}
+
+/* زر الإغلاق */
+.close-btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* لينكات القائمة */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #dce6ff;
+}
+
+/* Sidebar مخفية افتراضيًا */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* مخفية */
+  width: 250px;
+  height: 100vh; /* طول الشاشة كامل */
+  background-color: #004aad;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* لو القائمة طويلة يسمح بالتمرير */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; /* بدل -250px نخليها برا الشاشة بالكامل */
+  width: 250px;
+  height: 100vh;
+  background-color: #004aad;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  right: 0; /* تظهر بالكامل عند الفتح */
+}
+
+
