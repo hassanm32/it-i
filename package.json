@@ -17,18 +17,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-"homepage": "https://hassan-code-web.github.io/it-i",
-
+  "homepage": "https://hassan-code-web.github.io/it-i",
   "eslintConfig": {
     "extends": [
       "react-app",
